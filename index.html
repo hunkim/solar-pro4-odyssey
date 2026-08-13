@@ -71,9 +71,7 @@
   var DATA = {
     A: {
       subtitle: '서사시 운율을 살린 문어체 번역 — ~도다, ~소서, ~노라가 살아 있는 고전적 어조',
-      body: `— 오디세이아 제1권 1-141행 번역
-
-무사 여신이여, 내게 일러 주소서, 그토록 온갖 겪음 많던 사내가
+      body: `무사 여신이여, 내게 일러 주소서, 그토록 온갖 겪음 많던 사내가
 트로이의 거룩한 성채를 헐고 난 뒤 얼마나 많이 떠돌았는지,
 수많은 사람들의 성읍을 보았고 그 마음씨까지 알아버렸으며,
 얼마나 큰 고난을 바다 위에서 겪었는지—그 가슴속 억울함을 풀며
@@ -543,7 +541,12 @@
     var entry = DATA[mode]; if(!entry) return;
     headEl.innerHTML = '<h2>호메로스 《오디세이아》 제1권</h2>' +
       '<div class="sub">' + entry.subtitle + '</div>';
-    var paras = entry.body.split(/\n\r?\n/).map(function(p){ return p.replace(/\r?\n/g,' ').trim(); }).filter(Boolean);
+    var paras = entry.body.split(/
+
+?
+/).map(function(p){ return p.replace(/
+?
+/g,' ').trim(); }).filter(Boolean);
     bodyEl.innerHTML = paras.map(function(p,i){
       var cls = (i===0) ? 'first' : '';
       return '<p class="' + cls + '">' + escapeHtml(p) + '</p>';
