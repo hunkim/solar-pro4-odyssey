@@ -5,74 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <title>호메로스 《오디세이아》 제1권 — Solar-Pro4 번역</title>
 <style>
-  html, body {
-    margin: 0; padding: 0;
-    background: #faf8f3;
-    color: #2c2416;
-    font-family: Georgia, 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
-    line-height: 1.9; font-size: 18px;
-    -webkit-text-size-adjust: 100%; text-size-adjust: 100%;
-  }
-  @media (prefers-color-scheme: dark) {
-    html, body { background: #1c1c1a; color: #e8e0d0; }
-  }
-  header.topbar {
-    position: sticky; top: 0; z-index: 50;
-    background: #fffdf9;
-    border-bottom: 1px solid #e0d3bc;
-    padding: 14px 16px 10px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-  }
-  @media (prefers-color-scheme: dark) {
-    header.topbar { background: #252522; border-bottom-color: #3a3a38; box-shadow: none; }
-  }
-  .title-row { text-align: center; margin-bottom: 8px; }
-  .title-row h1 { font-size: 1.25rem; font-weight: 700; color: #8b4513; margin-bottom: 2px; }
-  .title-row .meta { font-size: 0.75rem; color: #6b5a45; font-style: italic; }
-  .toolbar { display: flex; justify-content: space-between; align-items: center; }
-  .left { display: flex; align-items: center; gap: 12px; }
-  .seg { display: inline-flex; background: #faf8f3; border-radius: 24px; padding: 3px; gap: 2px; }
-  @media (prefers-color-scheme: dark) { .seg { background: #1c1c1a; } }
-  .seg button {
-    background: transparent; border: none; border-radius: 20px; padding: 6px 13px;
-    font-family: 'Helvetica Neue', 'Apple SD Gothic Neo', sans-serif;
-    font-size: 0.78rem; font-weight: 500; color: #6b5a45; cursor: pointer;
-    transition: all 0.15s;
-  }
-  .seg button.active { background: #8b4513; color: #fff; }
-  .seg button:not(.active):hover { background: #f5e6d3; }
-  main { max-width: 700px; margin: 0 auto; padding: 24px 16px 36px; }
-  .work-head { text-align: center; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 1px dashed #e0d3bc; }
-  .work-head h2 { font-size: 1.4rem; font-weight: 600; color: #8b4513; margin-bottom: 4px; }
-  .work-head .sub { font-size: 0.85rem; color: #6b5a45; }
-  .body-text { font-size: 1.03rem; }
-  .body-text p { margin: 0 0 8px; text-indent: 1.2em; }
-  .body-text p.first, .body-text p.break { text-indent: 0; }
-  footer.statusbar {
-    position: fixed; bottom: 0; left: 0; right: 0;
-    background: #fffdf9; border-top: 1px solid #e0d3bc;
-    padding: 10px 16px;
-    display: flex; justify-content: space-between; align-items: center;
-    font-family: 'Helvetica Neue', 'Apple SD Gothic Neo', sans-serif;
-    font-size: 0.72rem; color: #6b5a45;
-  }
-  @media (prefers-color-scheme: dark) { footer.statusbar { background: #252522; border-top-color: #3a3a38; color: #a09080; } }
-  footer .tag { font-weight: 600; color: #8b4513; background: #f5e6d3; padding: 2px 10px; border-radius: 10px; }
-  @media (prefers-color-scheme: dark) { footer .tag { color: #c9a96e; background: #3a3530; } }
-  .fade { opacity: 0.25; transition: opacity 0.2s; }
+  html, body { margin:0; padding:0; background:#faf8f3; color:#2c2416;
+    font-family:Georgia, 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
+    line-height:1.9; font-size:18px; -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  @media (prefers-color-scheme:dark){ html,body{background:#1c1c1a;color:#e8e0d0;} }
+  header.topbar{position:sticky;top:0;z-index:50;background:#fffdf9;
+    border-bottom:1px solid #e0d3bc;padding:14px 16px 10px;
+    box-shadow:0 1px 4px rgba(0,0,0,.06);}
+  @media (prefers-color-scheme:dark){ header.topbar{background:#252522;border-bottom-color:#3a3a38;}}
+  .title-row{text-align:center;margin-bottom:8px;}
+  .title-row h1{font-size:1.25rem;font-weight:700;color:#8b4513;margin-bottom:2px;}
+  .title-row .meta{font-size:.75rem;color:#6b5a45;font-style:italic;}
+  .toolbar{display:flex;justify-content:space-between;align-items:center;}
+  .left{display:flex;align-items:center;gap:12px;}
+  .seg{display:inline-flex;background:#faf8f3;border-radius:24px;padding:3px;gap:2px;}
+  @media (prefers-color-scheme:dark){ .seg{background:#1c1c1a;} }
+  .seg button{background:transparent;border:none;border-radius:20px;padding:6px 13px;
+    font-family:'Helvetica Neue','Apple SD Gothic Neo',sans-serif;font-size:.78rem;
+    font-weight:500;color:#6b5a45;cursor:pointer;transition:all .15s;}
+  .seg button.active{background:#8b4513;color:#fff;}
+  .seg button:not(.active):hover{background:#f5e6d3;}
+  main{max-width:700px;margin:0 auto;padding:24px 16px 40px;}
+  .work-head{text-align:center;margin-bottom:24px;padding-bottom:14px;
+    border-bottom:1px dashed #e0d3bc;}
+  .work-head h2{font-size:1.4rem;font-weight:600;color:#8b4513;margin-bottom:4px;}
+  .work-head .sub{font-size:.85rem;color:#6b5a45;}
+  .body-text{font-size:1.03rem;}
+  .body-text p{margin:0 0 10px;text-indent:1.2em;}
+  .body-text p.first{text-indent:0;}
+  footer.statusbar{position:fixed;bottom:0;left:0;right:0;background:#fffdf9;
+    border-top:1px solid #e0d3bc;padding:10px 16px;display:flex;
+    justify-content:space-between;align-items:center;
+    font-family:'Helvetica Neue','Apple SD Gothic Neo',sans-serif;font-size:.72rem;color:#6b5a45;}
+  @media (prefers-color-scheme:dark){ footer.statusbar{background:#252522;border-top-color:#3a3a38;color:#a09080;} }
+  footer .tag{font-weight:600;color:#8b4513;background:#f5e6d3;padding:2px 10px;border-radius:10px;}
+  @media (prefers-color-scheme:dark){ footer .tag{color:#c9a96e;background:#3a3530;} }
+  .fade{opacity:.25;transition:opacity .2s;}
 </style>
 </head>
 <body>
 <header class="topbar">
   <div class="title-row">
     <h1>호메로스 《오디세이아》 — 제1권</h1>
-    <div class="meta">Solar-Pro4 번역 &middot; Perseus 원문(퍼블릭 도메인) &middot; Book I, 1-141행</div>
+    <div class="meta">Solar-Pro4 번역 · Perseus 원문(퍼블릭 도메인) · Book I, 1-141행</div>
   </div>
   <div class="toolbar">
     <div class="left">
       <div class="seg" id="modeSeg">
-        <button class="active" data-mode="A">A형 &middot; 서사시 문어체</button>
-        <button data-mode="D">D형 &middot; 현대 독자용</button>
+        <button class="active" data-mode="A">A형 · 서사시 문어체</button>
+        <button data-mode="D">D형 · 현대 독자용</button>
       </div>
     </div>
   </div>
@@ -90,9 +71,12 @@
   var DATA = {
     A: {
       subtitle: '서사시 운율을 살린 문어체 번역 — ~도다, ~소서, ~노라가 살아 있는 고전적 어조',
-      body: `무아여, 노래하라, 내게 일러라. 숱한 환난을 겪은 사내의 이야기를, 트로이의 신성한 성을 무너뜨리고 나서 얼마나 많은 곳을 떠돌았는지, 갖은 사람들의 도시를 보고 그들의 마음을 알았는지를. 바다 위에서 얼마나 큰 고난을 겪었는지, 그 마음속 슬픔을 달래며 자신과 동료들의 귀향을 구하려 했는지를. 그러나 그는 동료들을 구하지 못했으니, 그들이 자신들의 어리석음으로 몰살했기 때문이라.
-어리석은 자들! 그들이 헬리오스, 하이페리오스의 신성한 소를 끌어다 먹었기에, 그 신께서 그들의 귀향의 날을 앗아 가셨도다.
-그대께서도 우리에게 말씀하소서, 모든 신의 여왕 자식인 제우스 여신, 그대 외에 다른 이들은 모두 피한 불운을 벗어나 이미 집에 머물고 있거니와, 오직 그이만은 귀향과 아내 그리는 마음에 사로잡혀 있으니, 고귀한 님프 칼립소가, 신들 중 빛나는 여인이, 깊은 동굴 속에 그를 억류하며 남편으로 삼고자 하였도다.`
+      body: `무아여, 노래하라, 내게 일러라. 수없이 헤매고 고생한 사내에 대해, 트로이아의 거룩한 성을 허물고 난 뒤 얼마나 많은 곳을 떠돌았는지, 여러 사람들의 여러 도시를 보며 그들의 마음을 알았는지, 바다 위에서 얼마나 큰 고난을 겪었는지 — 그의 마음의 슬픔을 이겨내며 자신과 동료들의 귀향을 구하려 했으나, 그러나 동료들을 구하지 못했으니 그들이 자신들의 어리석음으로 죽었기 때문이라.
+
+어리석은 자들! 그들이 헬리오스, 히페리온의 소를 신성한 줄로 알아 잡아먹었기 때문에, 신이 그들의 귀향의 날을 앗아갔도다.
+
+그대 또한 우리에게 이야기하라, 모든 신들의 여왕이신 제우스 여신의 딸로서 — 그대 외에는 모든 이들이 그 끔찍한 파멸을 피해 귀향하여, 싸움과 바다를 벗어나 연고가 있는 곳에 이르렀으나, 오직 그 사내만은 귀향과 아내를 그리는 마음에 잡혀 있었으니, 빛나는 여신 칼립소가 깊은 동굴의 섬에서 그를 붙잡고 남편 삼기를 기뻐하였음이라.`
+
     }
   };
 
@@ -104,11 +88,12 @@
 
   function render(mode){
     var entry = DATA[mode];
+    if(!entry) return;
     headEl.innerHTML = '<h2>호메로스 《오디세이아》 제1권</h2>' +
       '<div class="sub">' + entry.subtitle + '</div>';
     var paras = entry.body.split(/\n\r?\n/).map(function(p){ return p.replace(/\r?\n/g,' ').trim(); }).filter(Boolean);
     bodyEl.innerHTML = paras.map(function(p,i){
-      var cls = (i===0 || /^[“‘]/.test(p)) ? 'first' : '';
+      var cls = (i===0) ? 'first' : '';
       return '<p class="' + cls + '">' + escapeHtml(p) + '</p>';
     }).join('');
     tagEl.textContent = (mode==='A' ? 'A형 · 서사시 문어체' : 'D형 · 현대 독자용');
@@ -116,8 +101,7 @@
 
   segEl.querySelectorAll('button').forEach(function(btn){
     btn.addEventListener('click', function(){
-      var mode = this.dataset.mode;
-      if(mode===currentMode) return;
+      var mode = this.dataset.mode; if(mode===currentMode) return;
       segEl.querySelectorAll('button').forEach(function(b){ b.classList.remove('active'); });
       this.classList.add('active');
       currentMode = mode;
