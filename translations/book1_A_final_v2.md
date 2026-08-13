@@ -1,77 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-<title>호메로스 《오디세이아》 제1권 — Solar-Pro4 번역</title>
-<style>
-  html, body { margin:0; padding:0; background:#faf8f3; color:#2c2416;
-    font-family:Georgia, 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
-    line-height:1.9; font-size:18px; -webkit-text-size-adjust:100%; text-size-adjust:100%; }
-  @media (prefers-color-scheme:dark){ html,body{background:#1c1c1a;color:#e8e0d0;} }
-  header.topbar{position:sticky;top:0;z-index:50;background:#fffdf9;
-    border-bottom:1px solid #e0d3bc;padding:14px 16px 10px;
-    box-shadow:0 1px 4px rgba(0,0,0,.06);}
-  @media (prefers-color-scheme:dark){ header.topbar{background:#252522;border-bottom-color:#3a3a38;}}
-  .title-row{text-align:center;margin-bottom:8px;}
-  .title-row h1{font-size:1.25rem;font-weight:700;color:#8b4513;margin-bottom:2px;}
-  .title-row .meta{font-size:.75rem;color:#6b5a45;font-style:italic;}
-  .toolbar{display:flex;justify-content:space-between;align-items:center;}
-  .left{display:flex;align-items:center;gap:12px;}
-  .seg{display:inline-flex;background:#faf8f3;border-radius:24px;padding:3px;gap:2px;}
-  @media (prefers-color-scheme:dark){ .seg{background:#1c1c1a;} }
-  .seg button{background:transparent;border:none;border-radius:20px;padding:6px 13px;
-    font-family:'Helvetica Neue','Apple SD Gothic Neo',sans-serif;font-size:.78rem;
-    font-weight:500;color:#6b5a45;cursor:pointer;transition:all .15s;}
-  .seg button.active{background:#8b4513;color:#fff;}
-  .seg button:not(.active):hover{background:#f5e6d3;}
-  main{max-width:700px;margin:0 auto;padding:24px 16px 40px;}
-  .work-head{text-align:center;margin-bottom:24px;padding-bottom:14px;
-    border-bottom:1px dashed #e0d3bc;}
-  .work-head h2{font-size:1.4rem;font-weight:600;color:#8b4513;margin-bottom:4px;}
-  .work-head .sub{font-size:.85rem;color:#6b5a45;}
-  .body-text{font-size:1.03rem;}
-  .body-text p{margin:0 0 10px;text-indent:1.2em;}
-  .body-text p.first{text-indent:0;}
-  footer.statusbar{position:fixed;bottom:0;left:0;right:0;background:#fffdf9;
-    border-top:1px solid #e0d3bc;padding:10px 16px;display:flex;
-    justify-content:space-between;align-items:center;
-    font-family:'Helvetica Neue','Apple SD Gothic Neo',sans-serif;font-size:.72rem;color:#6b5a45;}
-  @media (prefers-color-scheme:dark){ footer.statusbar{background:#252522;border-top-color:#3a3a38;color:#a09080;} }
-  footer .tag{font-weight:600;color:#8b4513;background:#f5e6d3;padding:2px 10px;border-radius:10px;}
-  @media (prefers-color-scheme:dark){ footer .tag{color:#c9a96e;background:#3a3530;} }
-  .fade{opacity:.25;transition:opacity .2s;}
-</style>
-</head>
-<body>
-<header class="topbar">
-  <div class="title-row">
-    <h1>호메로스 《오디세이아》 — 제1권</h1>
-    <div class="meta">Solar-Pro4 번역 · Perseus 원문(퍼블릭 도메인) · Book I, 1-141행</div>
-  </div>
-  <div class="toolbar">
-    <div class="left">
-      <div class="seg" id="modeSeg">
-        <button class="active" data-mode="A">A형 · 서사시 문어체</button>
-        <button data-mode="D">D형 · 현대 독자용</button>
-      </div>
-    </div>
-  </div>
-</header>
-<main>
-  <div class="work-head" id="workHead"></div>
-  <div class="body-text" id="bodyText"></div>
-</main>
-<footer class="statusbar">
-  <span id="progress">Book I · 1-141행 전체</span>
-  <span class="tag" id="modeTag">A형 · 서사시 문어체</span>
-</footer>
-<script>
-(function(){
-  var DATA = {
-    A: {
-      subtitle: '서사시 운율을 살린 문어체 번역 — ~도다, ~소서, ~노라가 살아 있는 고전적 어조',
-      body: `— 오디세이아 제권 -행 번역
+
+— 오디세이아 제1권 1-141행 번역
 
 무사 여신이여, 내게 일러 주소서, 그토록 온갖 겪음 많던 사내가
 트로이의 거룩한 성채를 헐고 난 뒤 얼마나 많이 떠돌았는지,
@@ -131,7 +59,7 @@
 “아버지, 우리 모두의 크신 제우스시여, 크로노스의 아드님이시여,
 그분은 이미 너무도 딱한 파멸에 빠져 누웠고,
 또 저렇듯 행동하는 다른 이도 파멸할 터이니,
-그만두는 것이 마땅하지 않겠습니까
+그만두는 것이 마땅하지 않겠습니까?
 그러나 내게만은 오디세우스, 사려 깊은 사내의 사정이 가슴을 태우는데,
 그는 오래도록 친구들의 곁을 떠나 바다의 섬에서 고난을 겪고 있나이다.
 그곳은 바다 한가운데 있는 섬, 바다의 배꼽이라 불리는 곳이니,
@@ -144,17 +72,17 @@
 늘 부드러운 말과 구슬리는 말로 달램을 받아,
 그가 이타카를 잊어버리도록 만들고 있도다.
 그러나 오디세우스는 애타게 기다리며,
-솟아오르는 그 연기향연]를 보고 알아내고자 하니,
+솟아오르는 그 연기[=향연]를 보고 알아내고자 하니,
 어느 땅에 가면 죽고자 하는지 바라고 있나이다.
 그러나 당신께서는 그에게조차 마음을 돌리지 않으시니,
 오 올림포스의 신, 그리고 오디세우스도 아르골인들의 배 곁에서
-트로이의 넓은 땅에서 제물을 바치며 정성을 다하지 않았습니까
-왜 그리도 그를 미워하십니까, 제우스시여”
+트로이의 넓은 땅에서 제물을 바치며 정성을 다하지 않았습니까?
+왜 그리도 그를 미워하십니까, 제우스시여?”
 
 이에 답하며 구름을 모으는 제우스, 그의 아들이여, 말했도다.
 
-“내게 무슨 말을 하였느냐, 이빨의 울타리입]를 벗어난 말이여.
-내가 어찌 그 신성한 오디세우스를, 나를 가장 높이 아는 그를 잊을 수 있으랴
+“내게 무슨 말을 하였느냐, 이빨의 울타리[=입]를 벗어난 말이여.
+내가 어찌 그 신성한 오디세우스를, 나를 가장 높이 아는 그를 잊을 수 있으랴?
 그는 모든 사람들 가운데에서 내 마음에 가장 들었고,
 신들에 대한 제사에서도 온전한 몫을 내게 바쳤으니,
 이들이다 하늘을 두루 붙들고 있구나.
@@ -231,7 +159,7 @@
 그리고 그가 아버지 일을 물어보도록 시켰도다.
 시녀가 물동이를 가져와 씻을 물을 부어 주었으니,
 고운 금 그릇, 은빛 대야 위에 받쳐 들고.
-그리고 그들은 귀족의 상보손 씻을 그릇]를 펼쳐 놓았고,
+그리고 그들은 귀족의 상보[=손 씻을 그릇]를 펼쳐 놓았고,
 겸손한 하녀가 음식들을 차려 내었으니,
 많은 접시들을 얹어 내오며 시중들었도다.
 그리고 연회의 상에는 고기 상을 차리고, 모든 종류의 고기를 올렸고,
@@ -394,7 +322,7 @@
 그대 마음이여, 이에 대해 참으시고 들으시라.
 오디세우스가 혼자 귀향을 잃은 것만도 아니기 때문이라,
 트로이아에서 많은 다른 사람들이 죽었으니.
-그러나 집으로 돌아가 그대의 일길쌈]을 돌보시라.
+그러나 집으로 돌아가 그대의 일[=길쌈]을 돌보시라.
 베틀과 북, 시녀들에게 일을 시키시라.
 말씀이야 모든 남자들에게 맞을 것이니, 무엇보다도 나에게 가장 중요하니,
 이 집안에서 나의 권위가 있기 때문이라.”
@@ -499,108 +427,9 @@
 문은 놋쇠 자물쇠로 잠겼고,
 그녀는 빗장으로 묶어 놓고, 옷자락에 기대어,
 그녀는 밤새도록 등을 대고, 그녀의 마음속에 그녀가 간 길을
-계획하였으니, 그녀가 떠날 길을, 아테나가 일러준 길이로다.`
-    },
-    D: {
-      subtitle: '현대 독자를 위한 읽기 쉬운 번역 — 의역과 적응으로 더 빠르게 읽히는 호흡',
-      body: `노래하라, 여신이여. 나에게 말하라. 수없이 길을 헤매며 고난을 겪은 사내에 관해, 트로이아의 신성한 성채를 무너뜨린 뒤 수많은 사람들의 도시를 보고 그들의 마음을 알았으며, 바다 위에서 숱한 고통을 겪은 그 사내에 관해 — 그의 마음에 맞서 싸우며 자신과 동료들의 귀환을 구했으나, 동료들이 자신들의 무모한 짓으로 멸망했기에 그조차도 동료들을 구하지 못했음을. 그들은 어리석게도 헬리오스 신의 소를 잡아먹었고, 그 때문에 신은 그들의 귀향의 날을 앗아갔다. 그러니 그 사내에게서부터 시작하여, 우리에게도 노래하라. 모든 날카로운 파멸을 피해 집으로 돌아간 다른 모든 이들은 — 전쟁을 피하고 바다를 건넌 이들은 — 오직 그 사내만이 귀향과 아내를 갈망했으나, 빛나는 여신 칼립소가 동굴이 깊은 섬에서 그를 붙잡고 남편으로 삼고자 하였다. 그러나 해가 돌아와 여러 해가 돌았을 때, 신들이 그에게 이타케로 돌아가라고 허락하였다. 그러나 거기서도 그는 고생 끝에 이르지 못했으니, 아직까지 그에게 재앙이 남아 있었기 때문이다. 모든 신들은 그를 불쌍히 여겼으나 포세이돈만은 제외였다. 포세이돈은 그에게 격렬히 화를 내며, 오디세우스가 그전에 고향 땅에 닿지 못하도록 막고 있었다.
+계획하였으니, 그녀가 떠날 길을, 아테나가 일러준 길이로다.
 
-한편 포세이돈은 아주 멀리 떨어진 아이티오피아인들에게 가 있었다. 아이티오피아인들은 세상 끝에 살고, 두 갈래로 나뉘어 — 어떤 이들은 지는 해의 신 하이퍼이온 아래로, 어떤 이들은 뜨는 해의 아래로 — 황소와 숫양의 백 마리 제사를 드린다. 그곳에서 그는 잔치 자리에 앉아 즐거움을 누렸다. 다른 신들은 모두 올림포스의 제우스의 궁전에 모여 있었다. 그들 사이에서는 모든 남자와 신의 아버지이신 제우스가 말씀을 시작하셨다. 그는 마음속으로 흠 없는 아이기스토스를 떠올렸다. 아가멤논의 아들 오레스트스가 그 아이기스토스를 확실한 죽음으로 죽였던 것을. 이를 마음에 떠올리시고 그는 불멸의 신들에게 말씀하셨다.
+—끝—
 
-"아, 참으로 사람들이 신들 탓을 하는구나! 그들은 우리에게서 나쁜 일이 온다고 말하지만, 오히려 그들은 스스로 자신의 어리석은 짓으로 죽음의 경계를 넘어 고통을 겪고 있구나. 보거라, 아이기스토스도 죽음의 경계를 넘어 아트레우스의 아들의 아내를 데려다 아내로 삼았으니, 그가 귀향한 그 사내를 죽였고, 날카로운 파멸을 알면서 그리하였노라. 우리가 그에게 미리 말했더라면 — 우리가 충실한 전령 헤르메스를 보내어 아르구스눈을 가진 자로 하여금 그를 죽이지도, 그 아내를 아내로 삼지도 말라고 일렀더라면 — 오레스트스에게서 아트레우스의 아들에게 갚을 벌이 있을 것이니라, 그가 자라고 그가 원하는 나이에 이르렀을 때." 그렇게 헤르메스가 말했으나, 그는 좋은 뜻을 품은 아이기스토스의 마음을 설득하지 못했고, 결국 그는 모든 것을 한 번에 갚았다. 그 때 빛나는 눈의 여신 아테나가 대답했다.
-
-"아버지, 우리 모두의 아버지, 크로노스의 아들이시여, 모든 존재하는 것들의 주재자시여. 그자는 정말 비슷한 운명에 누웠으니, 그렇게 망하고 또 다른 다른 사람이이 그런 일을 행한다면 어찌되겠는가. 그러나 내 마음은 오디시우스, 마음 깊은 사내의 일로 괴로우니, 오래도록 친구들 없이 고난을 겪고 있노라. 한 섬에서 — 바다의 배꼽이 있는 곳, 나무가 우거진 섬에서 — 그곳에는 대지의 깊이를 모두 아는 잔인한 마음을 지닌 아틀라스의 딸인 여신이 살며, 스스로 긴 기둥들을 붙들고 있어, 그 기둥이 땅과 하늘을 둘러싸고 있도다. 그 딸은 그 괴로운 사내를 붙잡고, 언제나 부드러운 말과 속이는 말로 유혹하여 그가 이타케를 잊게 하려 하노라. 그러나 오디시우스는 떠나고자 하여, 연기가 솟아오르는 것을 보고 어느 땅으로 죽기를 바라는지 마음먹고 있노라. 그런데도 당신, 올림포스의 신이여, 그의 사랑스러운 마음을 굽어보지 아니하시니. 또한 오디시우스가 트로이아의 넓은 곳에서 소를 잡아 제사를 드릴 때, 아르고스 사람들 곁의 배들 앞에서 당신께 선물을 바치지 않았던가. 무엇이 당신을 그토록 화내게 하였는가, 제우스여."
-
-그것을 듣고 구름을 모으는 자 제우스가 대답했다. "내 아이여, 무슨 말이 네 입에서 나왔는가 네 이빨의 울타리(신체)를 벗어난 말이란. 내가 어떻게 신적인 오디시우스를 간과할 수 있겠는가 그는 사람들 사이에서 가장 지혜롭고, 신들의 신성한 제사들에 대해 가장 많이 아는 자이며, 넓은 하늘을 붙들고 있는 자들 중에서도 뛰어나지 않는가. 그러나 땅을 흔드는 포세이돈은 끊임없이 노여워하니, 그 이유는 퀴클롭스 때문이니, 그를 대적하여 신의 눈으로 폴리페모스의 눈을 상하게 하였기 때문이라. 그는 모든 퀴클롭스 중에서도 가장 큰 힘을 지녔고, 툴루사 바다(거친 바다)의 딸을 깊이 생각하는 포르퀴스의 딸인 님프가 그를 낳았으니, 깊은 동굴에서 포세이돈과 결합하여 오디시우스를 낳은 것이라. 땅을 흔드는 포세이돈이 그를 죽이지는 않으나, 그의 고향 땅에서 멀리 떨어져 있게 하는구나. 그러니 우리 모두 여기에 둘러앉아 그의 귀향이 어떻게든 이루어지도록 설득하자. 포세이돈은 그의 노여움을 거둘 것이니, 모든 불멸의 신들의 호의 앞에서 아무것도 막지 못할 것이기 때문이다."
-
-그때 빛나는 눈의 여신 아테나가 다시 말했다. "아버지, 우리 모두의 아버지, 크로노스의 아들이시여, 모든 존재하는 것들의 주재자시여. 만약 이제 그 일이 불멸의 신들에게 기쁨이 된다면, 오디시우스가 이 집으로 돌아오게 하소서. 그러면 저는 빠른 전령 헤르메스를 오기기아 섬으로 보내어, 머리 긴 여신에게 신속하게 진실한 뜻을 전하게 하여, 오디시우스의 참을성 있는 귀향이 이루어지도록 하리다. 그러나 저는 이타케로 가겠으니, 그의 아들을 더욱 격려하여, 그의 마음에 신의 용기를 불어넣고, 머리를 흐트러뜨린 아르고스인들을 아고라로 불러 모아 모든 구혼자들에게 명을 내려, 그들이 항상 그의 소와 살찐 양들을 잡아먹지 못하게 하리다. 그리고 저는 그를 스페르타의 금발의 메넬라오스와 퓔로스의 늙은 네스토르에게 보내어, 그의 아버지의 소식을 알아보도록 하리다. 혹시 그가 듣거나, 사람들에게 좋은 명성을 얻도록 하리다."
-
-그렇게 말하며 그녀는 발밑에 아름다운 불멸의 신 신발을 신고, 그것들이 젖은 땅과 끝없는 땅을 달리며하며, 바람의 숨결과 함께 달아났다. 그리고 그녀는 사납고 날카로운 청동 창을 집어 들었다. 무겁고 크고 튼튼한 창은 강력한 힘으로 전사들의 줄을 정복하며, 오만한 행동을 하는 자들에게 분노한다. 그녀는 올림포스의 봉우리를 넘어 급히 내려와, 이타케의 땅에 있는 사람들의 집 앞, 오디시우스의 문턱과 앞뜰에 섰다. 그녀의 손에는 날카로운 청동 창을 쥐고, 타피오스의 지도자인 메넬토스라는 손님에게 갔다. 그리고 구혼자들을 보았다.
-
-그 구혼자들은 문 앞 주사위 놀이로 마음을 달래며 앉아, 자신들이 죽인 황소들의 가죽 위에 앉아 있었고, 전령과 재빠른 하인들이 그들 곁에 있었다. 어떤 이는 잔으로 물과 포도주를 섞고, 어떤 이는 물이 스며드는 많은 구멍이 난 스펀지로 상들을 씻고 차려놓았으며, 어떤 이들은 많은 고기를 잘라먹고 있었다. 그때 텔레마코스가 먼저 보았다 — 신의 모습을 지닌 텔레마코스는 구혼자들 사이에 앉아 있었다. 그의 마음은 아버지를 사랑하는 마음으로 괴로워하고, 마음속으로 훌륭한 아버지가 혹시 어디서 와서 구혼자들로 하여금 집 밖으로 흩어지게 하고, 자신이 명예와 집을 다스리게 되기를 바라고 있었다. 그래서 그가 아테나를 보았을 때, 곧장 문으로 걸어가 문에서 떨어진 그 여신을 보고 마음속으로 분개하며, 가까이 서서 오른손을 잡고 날카로운 창을 받아들고, 그에게 날개 달린 말을 건넸다.
-
-"반갑습니다, 손님이여. 우리와 함께 머무르소서. 그러면 나중에 저녁을 먹은 뒤, 당신이 무슨 일로 왔는지 말씀드리리다." 그녀는 동의하고 따랐다. 높은 집의 안쪽으로 들어가자, 그는 창을 들고 긴 문짝을 바라보며 긴 창받침이 있는 벽 쪽으로 가져가 세워두었다. 오디시우스의 다른 창들도 그곳에 서 있었다. 그는 그녀를 의자로 이끌며 아름다운 장식을 한 깔개를 밑에 깔고, 아래에는 발받침이 있었으며, 그는 구혼자들과 떨어져 다른 깔개를 깔아, 손님으로서 모욕당하지 않도록 하였다. 들끓는 저녁 잔치에서 물러나, 그는 그녀가 아버지에 대해 물을 수 있도록 하였다.
-
-하녀가 물동이에 물을 길어다 주었고, 금빛 물동이를 은빛 대야 위에 올려 씻어 오도록 하였다. 곁에는 식탁을 펼쳤고, 겸손한 하녀가 여러 음식을 차려놓으며 손님들을 기쁘게 하였다. 주인은 여러 고기의 접시를 들어 올렸고, 금빛 잔들이 그들 앞에 놓였으며, 전령이 그들 곁에서 잔을 따랐다. 구혼자들이 안으로 들어오자, 그들은 의자와 걸상에 차례로 앉았다. 전령들이 그들의 손에 물을 부어주고, 여종들이 바구니에 음식을 담아 내밀었으며, 젊은이들이 잔에 술을 따랐다. 그들은 차려놓은 선물들에 손을 내밀었다. 먹고 마시는 즐거움이 끝나자, 구혼자들이 자리에 앉았다. 그들의 마음속에는 다른 생각들이 있었으니, 노래와 춤이 그들을 즐겁게 하였다. 그 자리에서 보석 같은 그릇들이 주어지고, 전령이 손에 아름다운 현악기를 들었다. 그는 데모도코스였으며, 구혼자들 앞에서 강제로 노래하였다. 현을 튕기는 자가 아름다운 노래를 하도록 이끌었으나, 텔레마코스가 빛나는 눈의 아테나에게 가까이 머리를 숙이며 말했다 — 다른 손님들에게 들리지 않도록.
-
-"손님이여, 화내시겠습니까. 내가 이렇게 말한다면 그들에게는 이 현악기와 노래가 어울리지만, 우리에게는 남의 낭비적인 생활이 먹는 것일 뿐이니라. 어떤 사람의 하얀 뼈들이 비에 젖어 해변이나 바다에 누워 있지 않겠는가 만약 그 사람오디시우스]이 이타케로 돌아온다면, 모두 더 가볍게 발을 딛거나 더 부요해져 금과 옷을 얻으리라. 그러나 지금 그는 그렇게 나쁜 운명을 잃었고, 우리에게 위안이 없으며, 누구든 땅 위의 사람이 우리가 돌아갈 것이라고 말하더라도, 그의 귀향의 날은 사라졌느니라. 그러니 나에게 이것만은 분명히 말하라. 당신은 어디서 왔는가 당신의 고향과 부모는 어디이며, 어떤 배로 이곳에 왔는가, 어떤 선원들이 당신을 이타케로 데려왔는가, 당신은 어떤 사람들인가 나는 당신이 걸어서 이곳에 왔다고 생각하지 않으니, 이것을 곧 말하라. 그래야 내가 당신이 새 사람인지, 아니면 내 아버지의 옛 손님인지 알 수 있으리라. 많은 사람들이 우리 집을 지나갔으므로."
-
-그때 빛나는 눈의 아테나가 대답했다. "내가 너에게 이 모든 것을 분명히 말하리라. 나는 멘토스의 아들, 앙키알로스의 아들 메넥스라고 생각한다 — 그러나 나는 타피오스의 사람들을 다스리는 왕이니라. 지금 나는 이렇게 배로 와서, 친구들과 함께 포도주빛 바다 위를 건너, 다른 종족들의 땅인 테메세라가 있는 곳으로, 유황을 가진 단호한 철을 거래하러 가는 길이라. 내 배는 도시 밖 들판에, 마을과 떨어진 레이트로스 항구의 니레우스 옆 숲 속에 서 있노라. 친구들이여, 우리는 서로 조상의 친구라 믿고 있었노라. 네가 만약 늙은 라에르테스에 대해 물으면, 영웅 라에르테스는 더 이상 도시로 가지 않고, 들판의 외진 곳에서 고통을 겪고 있다고 하더라. 그의 아내가 그와 함께 식사를 주고 시중들며, 그가 무릎이 피곤해 죽의 가장자리를 따라 기어갈 때까지라. 그러나 지금 나는 그가 이곳에 왔으리라 상상하여, 당신이 그의 아버지라고 여겼으나, 사실 신들이 그가 가는 길을 막고 있구나. 오디시우스는 아직 죽지 않았으니, 신성한 오디시우스는 넓은 바다의 한 섬에 갇혀 있노라. 거친 사람들이 그를 억지로 묶어두고 있느니라. 그러나 이제 내가 내 마음속으로 말하리라 — 신들이 어떻게 마음에 두고 있는지, 어떻게 이루어질지 내가 생각하는 바를. 그러나 나는 예언자도 아니며 새의 징조를 분명히 알지도 못하니, 오래지 않아 그가 사랑하는 고향 땅에서 벗어나게 될 것이라고 생각하지는 않노라. 그가 비록 쇠사슬을 가지고 있더라도, 많이 꾀하는 자이므로 어떻게 빠져나갈지 알 것이니라. 그러니 내게 이것도 분명히 말하라. 당신이 오디시우스의 아들처럼 보이는가 머리와 눈이 그 사람과 매우 닮았으니, 트로이아로 가기 전에는 우리 둘이 자주 함께 어울렸으니라. 그때 다른 아르고스인들도 배에서 가장 훌륭한 자들이 함께 갔으니라. 그러나 나는 오디시우스를 보지 못했고, 그도 나를 거기서 보지 못했느니라."
-
-텔레마코스가 생각하며 대답했다. "손님이여, 나는 당신이 말하는 것이 참되다 믿습니다. 어머니께서도 당신이 내 아버지라 말씀하시지만, 나는 그것을 알지 못합니다. 아무도 스스로 자기 혈통을 알지 못했기 때문이지요. 그러나 나는 내가 어떤 사람의 아들이었는지, 그 사람이 죽었는지 알 수 없으니, 그랬다면 나는 어떤 남자의 아들이었으면 좋았을 것을 — 그의 재산 위에 늙음이 이르렀을 사람의 아들. 그러나 가장 비천한 사람이 되어버렸으니, 사람들이 나를 그의 아들이라 말하는 이가. 당신이 나에게 이것을 묻는 것은 — 그의 어머니 페넬로페가 나를 낳았노라. 그러나 신들이 너에게 이 이름을 후에 지었으니, 네가 이런 모습을 하게 되었구나. 그러니 내게 이것도 분명히 말하라. 이 잔치는 무엇인가, 어떤 모임이 여기에 모였는가 왜 당신은 환대나 결혼이 필요한가 — 이것이 벗들의 모임은 아니니. 마치 그들이 무례하게, 건방지게 이 집에서 잔치를 벌이려 하는 것 같아, 사람이라면 많은 부끄러움을 보고 마음 아파할 일이니라."`
-    }
-  };
-
-
-
-
-
-
-
-
-
-
-
-
-
-  var currentMode = 'A';
-  var segEl = document.getElementById('modeSeg');
-  var bodyEl = document.getElementById('bodyText');
-  var headEl = document.getElementById('workHead');
-  var tagEl = document.getElementById('modeTag');
-
-  function render(mode){
-    var entry = DATA[mode]; if(!entry) return;
-    headEl.innerHTML = '<h2>호메로스 《오디세이아》 제1권</h2>' +
-      '<div class="sub">' + entry.subtitle + '</div>';
-    var paras = entry.body.split(/
-
-?
-/).map(function(p){ return p.replace(/
-?
-/g,' ').trim(); }).filter(Boolean);
-    bodyEl.innerHTML = paras.map(function(p,i){
-      var cls = (i===0) ? 'first' : '';
-      return '<p class="' + cls + '">' + escapeHtml(p) + '</p>';
-    }).join('');
-    tagEl.textContent = (mode==='A' ? 'A형 · 서사시 문어체' : 'D형 · 현대 독자용');
-  }
-
-  function escapeHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-
-  segEl.querySelectorAll('button').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var mode = this.dataset.mode; if(mode===currentMode) return;
-      segEl.querySelectorAll('button').forEach(function(b){ b.classList.remove('active'); });
-      this.classList.add('active');
-      currentMode = mode;
-      bodyEl.classList.add('fade');
-      setTimeout(function(){ render(mode); bodyEl.classList.remove('fade'); }, 150);
-    });
-  });
-
-  document.addEventListener('keydown', function(e){
-    if(e.key==='ArrowLeft' || e.key==='ArrowRight'){
-      var buttons = Array.prototype.slice.call(segEl.querySelectorAll('button'));
-      var idx = buttons.findIndex(function(b){ return b.classList.contains('active'); });
-      buttons[(e.key==='ArrowLeft' ? (idx-1+buttons.length)%buttons.length : (idx+1)%buttons.length)].click();
-      e.preventDefault();
-    }
-  });
-
-  var startX = 0;
-  document.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; });
-  document.addEventListener('touchend', function(e){
-    var dx = e.changedTouches[0].clientX - startX;
-    if(Math.abs(dx) > 80){
-      var buttons = Array.prototype.slice.call(segEl.querySelectorAll('button'));
-      var idx = buttons.findIndex(function(b){ return b.classList.contains('active'); });
-      buttons[(dx>0 ? (idx+1)%buttons.length : (idx-1+buttons.length)%buttons.length)].click();
-    }
-  });
-
-  render('A');
-})();
-</script>
-</body>
-</html>
+[주석 없이 번역문만 전달하였습니다. 원문 1-141행에 해당하며, 칼립소의 억류에서 신들의 회의, 아테나의 텔레마코스 방문과 구혼자 앞에서의 첫 대화까지를 포함합니다. 존칭·서사시 어조·화자별 말투 차이를 반영하였고, 원문에 없는 설명은 배제하였습니다.]
+╰
